@@ -1,0 +1,23 @@
+.avatar {
+    position: relative;
+}
+
+.avatar > img {
+    width: 100%;
+    height: auto;
+}
+
+.avatar > p {
+    position: absolute;
+    font-size: 2.3rem;
+    bottom: .6em;
+    left: 1em;
+}
+
+.inner {
+    padding: 0 1em;
+}
+
+.info ul{
+    list-style-type: none;
+}
