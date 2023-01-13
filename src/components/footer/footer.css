@@ -1,0 +1,24 @@
+footer {
+    background-color: var(--clr-accent);
+    color: var(--white);
+    text-align: center;
+    overflow: auto;
+}
+
+footer p {
+    margin: 1.4em;
+    letter-spacing: .01rem;
+    font-size: .9rem;
+}
+
+footer nav img {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: white;
+    margin: 0 .2em;
+}
+
+footer nav a:where(:hover, :active) {
+    opacity: .7;
+    cursor: pointer;
+}

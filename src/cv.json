@@ -1,0 +1,77 @@
+{
+    "work-experience": [
+        {
+            "job-title": "Front-End Developer",
+            "start": "Jan 2015",
+            "end": null,
+            "location": "w3schools.com"
+        },
+        {
+            "job-title": "Web Developer",
+            "start": "March 2012",
+            "end": "Dec 2014",
+            "location": "something.com"
+        },
+        {
+            "job-title": "Graphics Designer",
+            "start": "June 2010",
+            "end": "March 2012",
+            "location": "designsomething.com"
+        }
+    ],
+    "education": [
+        {
+            "institution": "w3schools.com",
+            "start": "Forever",
+            "end": null,
+            "degree": "Web Dev. All i need to know in one place"
+        },
+        {
+            "institution": "London Business School",
+            "start": 2013,
+            "end": 2015,
+            "degree": "Master's Degree"
+        },
+        {
+            "institution": "School of Coding",
+            "start": 2010,
+            "end": 2013,
+            "degree": "Bachelor's Degree"
+        }
+    ],
+    "skills": [
+        {
+            "name": "Adobe Photoshop",
+            "level": "90%"
+        },
+        {
+            "name": "Photography",
+            "level": "80%"
+        },
+        {
+            "name": "Illustrator",
+            "level": "75%"
+        },
+        {
+            "name": "Media",
+            "level": "50%"
+        }
+    ],
+    "languages": [
+        {
+            "name": "English",
+            "level": "100%",
+            "degree": "fluent"
+        },
+        {
+            "name": "French",
+            "level": "50%",
+            "degree": "adept"
+        },
+        {
+            "name": "Latin",
+            "level": "25%",
+            "degree": "learning"
+        }
+    ]
+}
