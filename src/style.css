@@ -3,13 +3,23 @@
   font: inherit;
   margin: 0;
   padding: 0;
-  --clr-primary: #757575;
-  --clr-secondary: #545454;
-  --clr-tertiary: #ADADAD;
+  --clr-primary: #ccc;
+  --clr-secondary: #aaa;
+  --clr-tertiary: #eee;
   --clr-dark: #000000;
+  --black: #000;
+  --grey-100: #222;
+  --grey-200: #444;
+  --grey-300: #666;
+  --grey-400: #888;
+  --grey-600: #aaa;
+  -grey-700: #ccc;
+  --grey-800: #ddd;
+  --grey-900: #eee;
   --white: #ffffff;
   --shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
   --clr-accent: rgb(0, 150, 136);
+  --clr-accent-bold: rgb(0, 160, 146);
 }
 
 body {
@@ -18,9 +28,20 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--clr-primary);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@media print {
+  #app header {
+    display: none;
+  }
+
+  #app footer {
+    display: none;
+  }
 }

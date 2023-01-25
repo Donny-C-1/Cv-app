@@ -1,12 +1,9 @@
 import './main.css';
-import cvData from '../../cv.json';
 import calendar from '../../images/calendar-month.svg';
 import briefcase from '../../images/briefcase1.svg';
 import certificate from '../../images/certificate.svg';
 
-const { "work-experience": exp, "education": ed } = cvData
-
-function Main() {
+function Main(props) {
     return (
         <main>
             <section className="cont">
@@ -14,16 +11,16 @@ function Main() {
                     <img src={briefcase} alt='work experience' />
                     <span>Work Experience</span>
                 </h2>
-                {exp.map((experience, index) => (
+                {props.exp.map((experience, index) => (
                     <article key={index}>
-                        <h3 className='job-title'>{experience['job-title']} / {experience.location}</h3>
+                        <h3 className='job-title'>{experience['job-title']} / {experience['company-name']}</h3>
                         <div className='time-period'>
                             <img src={calendar} alt='calendar' />
-                            <span className='date'>{experience.start} -</span>
-                            {experience.end === null ? <span className='status'>Current</span> : <span>{experience.end}</span>}
+                            <span className='date'>{(new Date(experience.start).toLocaleString('default', { month: 'short', year: 'numeric'}))} -</span>
+                            {experience.end === null ? <span className='status'>Current</span> : <span>{new Date(experience.end).toLocaleString('default', { month: 'short', year: 'numeric'})}</span>}
                         </div>
-                        <p>Lorem ipsum sit amet di tolum gea, git na ageh du fileom brught na ebig de sit. Il ve ju anem le du'it ve boujei ge thet.</p>
-                        {index !== exp.length -1 ? <hr /> : <br />}
+                        <p>{experience.comments}</p>
+                        {index !== props.exp.length -1 ? <hr /> : <br />}
                     </article>
                 ))
                 }
@@ -34,16 +31,16 @@ function Main() {
                     <img src={certificate} alt='education' />
                     <span>Education</span>
                 </h2>
-                {ed.map((education, index) => (
+                {props.education.map((edu, index) => (
                     <article key={index}>
-                        <h3>{education.institution}</h3>
+                        <h3>{edu.institution}</h3>
                         <div className='time-period'>
                             <img src={calendar} alt='calendar' />
-                            <span className='date'>{education.start} </span>
-                            <span>{education.end === null ? "" : "  - " + education.end}</span>
+                            <span className='date'>{(new Date(edu.start)).toLocaleString('default', { month: 'short', year: 'numeric' })} </span>
+                            <span>{edu.end === null ? "" : "  - " + (new Date(edu.end)).toLocaleString('default', { month: 'short', year: 'numeric'})}</span>
                         </div>
-                        <p>{education.degree}</p>
-                        {index !== ed.length -1 ? <hr /> : <br />}
+                        <p>{edu.degree}</p>
+                        {index !== props.education.length -1 ? <hr /> : <br />}
                     </article>
                 ))}
             </section>

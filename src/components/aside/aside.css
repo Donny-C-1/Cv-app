@@ -1,33 +1,56 @@
-.avatar {
+/* ^ Avatar ^ */
+
+aside .avatar {
     position: relative;
-}
-
-.avatar > img {
     width: 100%;
-    height: auto;
+    aspect-ratio: 3 / 2;
+    background-color: var(--clr-accent);
 }
 
-.avatar > p {
-    position: absolute;
-    font-size: 2.3rem;
-    bottom: .6em;
-    left: 1em;
+aside .avatar>img {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    object-fit: cover;
 }
+
+aside .avatar>.name {
+    position: absolute;
+    display: grid;
+    justify-content: left;
+    align-content: flex-end;
+    font-size: 2.3rem;
+    top: 0;
+    left: 0;
+    /* 1em */
+    width: 100%;
+    height: 100%;
+    color: var(--white);
+    background-image: linear-gradient(transparent 50%, black 130%);
+}
+
+aside .avatar .name h1 {
+    margin-left: 1em;
+    margin-bottom: .6em;
+    display: flex;
+    gap: .2em;
+}
+
 
 aside .inner {
     padding-inline: 1.2em;
 }
 
-aside .inner .info ul{
+aside .inner .info ul {
     list-style-type: none;
 }
 
 aside .inner .info ul li {
     margin: 1em 0;
-    color: var(--clr-primary);
+    color: var(--grey-200);
 }
 
-aside .inner .info ul li > * {
+aside .inner .info ul li>* {
     vertical-align: middle;
 }
 
@@ -47,7 +70,7 @@ aside .inner h2 {
     /* color: var(--clr-secondary); */
 }
 
-aside .inner h2 > * {
+aside .inner h2>* {
     vertical-align: middle;
 }
 
@@ -59,21 +82,20 @@ aside .inner h2 img {
 
 aside .inner .rating p:first-child {
     margin: 1em 0;
-    color: var(--clr-primary);
+    color: var(--grey-200);
     font-size: .9rem;
 }
 
-aside .inner .rating .level{
+aside .inner .rating .level {
     background-color: var(--clr-tertiary);
     border-radius: 1rem;
     line-height: 1.5rem;
 }
 
 aside .inner .rating .level > div {
-    width: 50%;
     border-radius: inherit;
     background-color: var(--clr-accent);
     text-align: center;
     color: var(--white);
     font-size: .8em;
-} 
+}

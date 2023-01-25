@@ -1,76 +1,100 @@
 {
+    "info": {
+        "fname": "Ellie",
+        "lname": "Uzor",
+        "title": "Designer",
+        "address": "London, UK",
+        "email": "example@mail.com",
+        "phone": "+1 234 567 89"
+    },
     "work-experience": [
         {
+            "id": 1,
             "job-title": "Front-End Developer",
-            "start": "Jan 2015",
+            "start": "2015-01-24",
             "end": null,
-            "location": "w3schools.com"
+            "company-name": "w3schools.com",
+            "comments": "Lorem ipsum sit amet di tolum gea, git na ageh du fileom brught na ebig de sit. Il ve ju anem le du'it ve boujei ge thet."
         },
         {
+            "id": 2,
             "job-title": "Web Developer",
-            "start": "March 2012",
-            "end": "Dec 2014",
-            "location": "something.com"
+            "start": "2012-03-09",
+            "end": "2014-12-15",
+            "company-name": "something.com",
+            "comments": "Lorem ipsum sit amet di tolum gea, git na ageh du fileom brught na ebig de sit. Il ve ju anem le du'it ve boujei ge thet."
         },
         {
+            "id": 3,
             "job-title": "Graphics Designer",
-            "start": "June 2010",
-            "end": "March 2012",
-            "location": "designsomething.com"
+            "start": "2010-06-22",
+            "end": "2012-03-30",
+            "company-name": "designsomething.com",
+            "comments": "Lorem ipsum sit amet di tolum gea, git na ageh du fileom brught na ebig de sit. Il ve ju anem le du'it ve boujei ge thet."
         }
     ],
     "education": [
         {
+            "id": 1,
             "institution": "w3schools.com",
-            "start": "Forever",
+            "start": "2016",
             "end": null,
             "degree": "Web Dev. All i need to know in one place"
         },
         {
+            "id": 2,
             "institution": "London Business School",
-            "start": 2013,
-            "end": 2015,
+            "start": "2013-05-31",
+            "end": "2015-03-30",
             "degree": "Master's Degree"
         },
         {
+            "id": 3,
             "institution": "School of Coding",
-            "start": 2010,
-            "end": 2013,
+            "start": "2010-07-25",
+            "end": "2013-04-05",
             "degree": "Bachelor's Degree"
         }
     ],
     "skills": [
         {
+            "id": 1,
             "name": "Adobe Photoshop",
-            "level": "90%"
+            "level": "90"
         },
         {
+            "id": 2,
             "name": "Photography",
-            "level": "80%"
+            "level": "80"
         },
         {
+            "id": 3,
             "name": "Illustrator",
-            "level": "75%"
+            "level": "75"
         },
         {
+            "id": 4,
             "name": "Media",
-            "level": "50%"
+            "level": "50"
         }
     ],
     "languages": [
         {
+            "id": 1,
             "name": "English",
-            "level": "100%",
+            "level": "100",
             "degree": "fluent"
         },
         {
+            "id": 2,
             "name": "French",
-            "level": "50%",
+            "level": "50",
             "degree": "adept"
         },
         {
+            "id": 3,
             "name": "Latin",
-            "level": "25%",
+            "level": "25",
             "degree": "learning"
         }
     ]

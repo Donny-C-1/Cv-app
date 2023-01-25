@@ -1,11 +1,13 @@
 main section {
     padding: 0 1.7em;
     overflow: auto;
+    color: var(--grey-400);
 }
 
 main section h2 {
     font-size: 2em;
     margin: 1em 0; 
+    color: var(--grey-200);
 }
 
 main section h2 span {
@@ -26,7 +28,7 @@ main article {
 
 main article h3 {
     font-size: 1.2rem;
-    color: var(--clr-secondary);
+    color: var(--grey-200);
     margin: .6em 0;
 }
 

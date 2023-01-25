@@ -1,4 +1,4 @@
-#app .content {
+#app .cv-preview {
   display: grid;
   gap: 1em;
   padding: 1em;
@@ -9,8 +9,8 @@
   box-shadow: var(--shadow);
 }
 
-@media screen and (min-width:600px) {
-  #app .content {
+@media print, screen and (min-width:45rem) {
+  #app .cv-preview {
     grid-template-columns: 1fr 2fr;
   }
 }
