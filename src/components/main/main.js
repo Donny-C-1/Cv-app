@@ -17,7 +17,7 @@ function Main(props) {
                         <div className='time-period'>
                             <img src={calendar} alt='calendar' />
                             <span className='date'>{(new Date(experience.start).toLocaleString('default', { month: 'short', year: 'numeric'}))} -</span>
-                            {experience.end === null ? <span className='status'>Current</span> : <span>{new Date(experience.end).toLocaleString('default', { month: 'short', year: 'numeric'})}</span>}
+                            {experience.end ? <span>{new Date(experience.end).toLocaleString('default', { month: 'short', year: 'numeric'})}</span> : <span className='status'>Current</span>}
                         </div>
                         <p>{experience.comments}</p>
                         {index !== props.exp.length -1 ? <hr /> : <br />}
@@ -36,8 +36,8 @@ function Main(props) {
                         <h3>{edu.institution}</h3>
                         <div className='time-period'>
                             <img src={calendar} alt='calendar' />
-                            <span className='date'>{(new Date(edu.start)).toLocaleString('default', { month: 'short', year: 'numeric' })} </span>
-                            <span>{edu.end === null ? "" : "  - " + (new Date(edu.end)).toLocaleString('default', { month: 'short', year: 'numeric'})}</span>
+                            <span className='date'>{(new Date(edu.start)).toLocaleString('default', { month: 'short', year: 'numeric' })} - </span>
+                            {edu.end ? <span>{new Date(edu.end).toLocaleString('default', { month: 'short', year: 'numeric'})}</span> : <span className='status'>current</span>}
                         </div>
                         <p>{edu.degree}</p>
                         {index !== props.education.length -1 ? <hr /> : <br />}

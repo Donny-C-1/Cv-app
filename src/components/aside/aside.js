@@ -77,7 +77,7 @@ function Skills(props) {
                 <div className='rating' key={index}>
                     <p>{skill.name}</p>
                     <div className='level'>
-                        <div style={{ width: `${skill.level}%` }}>{`${skill.level}%`}</div>
+                        <div style={{ width: `${skill.level || 50}%` }}>{`${skill.level || 50}%`}</div>
                     </div>
                 </div>
             ))}
@@ -96,7 +96,7 @@ function Languages(props) {
                 <div className='rating' key={index}>
                     <p>{language.name}</p>
                     <div className='level'>
-                        <div style={{ width: `${language.level}%` }}>{language.degree}</div>
+                        <div style={{ width: `${language.level || 50}%` }}>{language.degree || 'adept'}</div>
                     </div>
                 </div>
             ))}
