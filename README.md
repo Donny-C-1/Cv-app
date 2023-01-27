@@ -10,4 +10,4 @@ This is the completion of a project from <a href="https://www.theodinproject.com
 The template was gotten from <a href="https://www.w3schools.com/w3css/w3css_templates.asp">w3schools</a>
 
 Here is the Live Preview of the app
-<a href="https://donny-c-1.github.io/Cv-app/">CV Generator</a>
+<a href="https://donny-c-1.github.io/Cv-app/index.html">CV Generator</a>
